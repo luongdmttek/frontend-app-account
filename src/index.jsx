@@ -2,16 +2,16 @@ import 'core-js/stable';
 import 'regenerator-runtime/runtime';
 
 import 'formdata-polyfill';
-import { AppProvider, ErrorPage } from '@edx/frontend-platform/react';
+import { AppProvider, ErrorPage } from 'frontend-platform-vi/react';
 import {
   subscribe, initialize, APP_INIT_ERROR, APP_READY, mergeConfig,
-} from '@edx/frontend-platform';
+} from 'frontend-platform-vi';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Route, Switch } from 'react-router-dom';
 
-import Header, { messages as headerMessages } from '@edx/frontend-component-header';
-import Footer, { messages as footerMessages } from '@edx/frontend-component-footer';
+import Header, { messages as headerMessages } from 'frontend-component-header-vi';
+import Footer, { messages as footerMessages } from 'frontend-component-footer-vi';
 
 import configureStore from './data/configureStore';
 import AccountSettingsPage, { NotFoundPage } from './account-settings';

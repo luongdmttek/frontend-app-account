@@ -1,6 +1,6 @@
 import { put } from 'redux-saga/effects';
-import { logError } from '@edx/frontend-platform/logging';
-import { history } from '@edx/frontend-platform';
+import { logError } from 'frontend-platform-vi/logging';
+import { history } from 'frontend-platform-vi';
 
 export default function* handleFailure(error, failureAction = null, failureRedirectPath = null) {
   if (error.fieldErrors && failureAction !== null) {

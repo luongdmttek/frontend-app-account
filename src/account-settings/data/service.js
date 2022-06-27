@@ -1,5 +1,5 @@
-import { getConfig } from '@edx/frontend-platform';
-import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
+import { getConfig } from 'frontend-platform-vi';
+import { getAuthenticatedHttpClient } from 'frontend-platform-vi/auth';
 import pick from 'lodash.pick';
 import pickBy from 'lodash.pickby';
 import omit from 'lodash.omit';

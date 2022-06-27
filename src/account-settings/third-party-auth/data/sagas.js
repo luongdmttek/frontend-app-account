@@ -1,5 +1,5 @@
 import { call, put, takeEvery } from 'redux-saga/effects';
-import { logError } from '@edx/frontend-platform/logging';
+import { logError } from 'frontend-platform-vi/logging';
 
 import {
   disconnectAuthReset,

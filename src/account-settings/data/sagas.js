@@ -2,9 +2,9 @@ import {
   call, put, delay, takeEvery, all,
 } from 'redux-saga/effects';
 
-import { publish } from '@edx/frontend-platform';
-import { getLocale, handleRtl, LOCALE_CHANGED } from '@edx/frontend-platform/i18n';
-import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
+import { publish } from 'frontend-platform-vi';
+import { getLocale, handleRtl, LOCALE_CHANGED } from 'frontend-platform-vi/i18n';
+import { getAuthenticatedUser } from 'frontend-platform-vi/auth';
 
 // Actions
 import {

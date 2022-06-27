@@ -1,10 +1,10 @@
 import React, { useState, useContext, useEffect } from 'react';
-import { getConfig, history } from '@edx/frontend-platform';
+import { getConfig, history } from 'frontend-platform-vi';
 import {
   Alert, Hyperlink, Input, Button, Spinner,
 } from '@edx/paragon';
 import { Link } from 'react-router-dom';
-import { injectIntl, intlShape, FormattedMessage } from '@edx/frontend-platform/i18n';
+import { injectIntl, intlShape, FormattedMessage } from 'frontend-platform-vi/i18n';
 
 import { submitIdVerification } from '../data/service';
 import { useNextPanelSlug } from '../routing-utilities';

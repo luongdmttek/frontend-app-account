@@ -1,6 +1,6 @@
 import React, { useState, useContext, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { AppContext } from '@edx/frontend-platform/react';
+import { AppContext } from 'frontend-platform-vi/react';
 
 import { getProfileDataManager } from '../account-settings/data/service';
 import PageLoading from '../account-settings/PageLoading';

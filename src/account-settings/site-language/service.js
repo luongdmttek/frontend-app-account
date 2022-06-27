@@ -1,6 +1,6 @@
-import { getConfig } from '@edx/frontend-platform';
-import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
-import { convertKeyNames, snakeCaseObject } from '@edx/frontend-platform/utils';
+import { getConfig } from 'frontend-platform-vi';
+import { getAuthenticatedHttpClient } from 'frontend-platform-vi/auth';
+import { convertKeyNames, snakeCaseObject } from 'frontend-platform-vi/utils';
 import siteLanguageList from './constants';
 
 export async function getSiteLanguageList() {

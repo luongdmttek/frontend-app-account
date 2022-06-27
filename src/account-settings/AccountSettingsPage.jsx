@@ -1,18 +1,18 @@
-import { AppContext } from '@edx/frontend-platform/react';
-import { getConfig, history, getQueryParameters } from '@edx/frontend-platform';
+import { AppContext } from 'frontend-platform-vi/react';
+import { getConfig, history, getQueryParameters } from 'frontend-platform-vi';
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import memoize from 'memoize-one';
 import findIndex from 'lodash.findindex';
-import { sendTrackingLogEvent } from '@edx/frontend-platform/analytics';
+import { sendTrackingLogEvent } from 'frontend-platform-vi/analytics';
 import {
   injectIntl,
   intlShape,
   FormattedMessage,
   getCountryList,
   getLanguageList,
-} from '@edx/frontend-platform/i18n';
+} from 'frontend-platform-vi/i18n';
 import {
   Button, Hyperlink, Icon, Alert,
 } from '@edx/paragon';

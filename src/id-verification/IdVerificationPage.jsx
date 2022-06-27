@@ -5,9 +5,9 @@ import {
 } from 'react-router-dom';
 import camelCase from 'lodash.camelcase';
 import qs from 'qs';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import { Modal, Button } from '@edx/paragon';
-import { getConfig } from '@edx/frontend-platform';
+import { getConfig } from 'frontend-platform-vi';
 import { idVerificationSelector } from './data/selectors';
 import './getUserMediaShim';
 

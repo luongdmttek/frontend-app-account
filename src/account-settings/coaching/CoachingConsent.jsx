@@ -1,14 +1,14 @@
 import React from 'react';
 
-import { getConfig, getQueryParameters } from '@edx/frontend-platform';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { getConfig, getQueryParameters } from 'frontend-platform-vi';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import { Hyperlink } from '@edx/paragon';
 import { faCheck } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import get from 'lodash.get';
-import { getAuthenticatedHttpClient, getAuthenticatedUser } from '@edx/frontend-platform/auth';
+import { getAuthenticatedHttpClient, getAuthenticatedUser } from 'frontend-platform-vi/auth';
 
 import PageLoading from '../PageLoading';
 import CoachingConsentForm from './CoachingConsentForm';

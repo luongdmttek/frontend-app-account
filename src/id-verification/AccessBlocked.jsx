@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { getConfig } from '@edx/frontend-platform';
-import { injectIntl, intlShape, FormattedMessage } from '@edx/frontend-platform/i18n';
+import { getConfig } from 'frontend-platform-vi';
+import { injectIntl, intlShape, FormattedMessage } from 'frontend-platform-vi/i18n';
 
 import messages from './IdVerification.messages';
 import { ERROR_REASONS } from './IdVerificationContext';

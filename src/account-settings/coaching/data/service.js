@@ -1,5 +1,5 @@
-import { getAuthenticatedHttpClient } from '@edx/frontend-platform/auth';
-import { getConfig } from '@edx/frontend-platform';
+import { getAuthenticatedHttpClient } from 'frontend-platform-vi/auth';
+import { getConfig } from 'frontend-platform-vi';
 import get from 'lodash.get';
 
 /**

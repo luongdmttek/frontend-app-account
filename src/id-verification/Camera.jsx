@@ -2,11 +2,11 @@
 /* eslint-disable jsx-a11y/no-access-key */
 import React from 'react';
 import PropTypes from 'prop-types';
-import { sendTrackEvent } from '@edx/frontend-platform/analytics';
+import { sendTrackEvent } from 'frontend-platform-vi/analytics';
 // eslint-disable-next-line import/no-unresolved
 import * as blazeface from '@tensorflow-models/blazeface';
 import CameraPhoto, { FACING_MODES } from 'jslib-html5-camera-photo';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import { Form, Spinner } from '@edx/paragon';
 
 import shutter from './data/camera-shutter.base64.json';

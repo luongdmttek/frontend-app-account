@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { injectIntl, intlShape, FormattedMessage } from '@edx/frontend-platform/i18n';
+import { injectIntl, intlShape, FormattedMessage } from 'frontend-platform-vi/i18n';
 import { Input, Button, Hyperlink } from '@edx/paragon';
 
 import PropTypes from 'prop-types';

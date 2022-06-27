@@ -4,14 +4,14 @@ import { createMemoryHistory } from 'history';
 import {
   render, cleanup, screen, act,
 } from '@testing-library/react';
-import { injectIntl, IntlProvider } from '@edx/frontend-platform/i18n';
-import * as analytics from '@edx/frontend-platform/analytics';
+import { injectIntl, IntlProvider } from 'frontend-platform-vi/i18n';
+import * as analytics from 'frontend-platform-vi/analytics';
 import IdVerificationContext from '../IdVerificationContext';
 import CollapsibleImageHelp from '../CollapsibleImageHelp';
 
 jest.mock('jslib-html5-camera-photo');
 jest.mock('@tensorflow-models/blazeface');
-jest.mock('@edx/frontend-platform/analytics');
+jest.mock('frontend-platform-vi/analytics');
 
 analytics.sendTrackEvent = jest.fn();
 

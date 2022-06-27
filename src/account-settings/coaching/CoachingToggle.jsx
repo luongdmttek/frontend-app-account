@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import { ValidationFormGroup, Input } from '@edx/paragon';
 import messages from './CoachingToggle.messages';
 import { editableFieldSelector } from '../data/selectors';

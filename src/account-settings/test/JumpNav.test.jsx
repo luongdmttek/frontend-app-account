@@ -1,9 +1,9 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { IntlProvider, injectIntl } from '@edx/frontend-platform/i18n';
+import { IntlProvider, injectIntl } from 'frontend-platform-vi/i18n';
 
 import { BrowserRouter as Router } from 'react-router-dom';
-import { mergeConfig, setConfig } from '@edx/frontend-platform';
+import { mergeConfig, setConfig } from 'frontend-platform-vi';
 import JumpNav from '../JumpNav';
 
 const IntlJumpNav = injectIntl(JumpNav);

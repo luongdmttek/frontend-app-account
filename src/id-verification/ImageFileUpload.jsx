@@ -1,5 +1,5 @@
 import React, { useCallback, useState } from 'react';
-import { intlShape } from '@edx/frontend-platform/i18n';
+import { intlShape } from 'frontend-platform-vi/i18n';
 import PropTypes from 'prop-types';
 import { Alert } from '@edx/paragon';
 import messages from './IdVerification.messages';

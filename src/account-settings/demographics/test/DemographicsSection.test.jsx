@@ -1,6 +1,6 @@
-import * as auth from '@edx/frontend-platform/auth';
+import * as auth from 'frontend-platform-vi/auth';
 
-import { IntlProvider, injectIntl } from '@edx/frontend-platform/i18n';
+import { IntlProvider, injectIntl } from 'frontend-platform-vi/i18n';
 
 import { Provider } from 'react-redux';
 import React from 'react';
@@ -8,7 +8,7 @@ import configureStore from 'redux-mock-store';
 import renderer from 'react-test-renderer';
 import DemographicsSection from '../DemographicsSection';
 
-jest.mock('@edx/frontend-platform/auth');
+jest.mock('frontend-platform-vi/auth');
 
 const IntlDemographicsSection = injectIntl(DemographicsSection);
 

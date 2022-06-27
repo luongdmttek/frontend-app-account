@@ -3,13 +3,13 @@ import { Provider } from 'react-redux';
 import renderer from 'react-test-renderer';
 import { act } from 'react-dom/test-utils';
 import configureStore from 'redux-mock-store';
-import { IntlProvider, injectIntl } from '@edx/frontend-platform/i18n';
-import * as auth from '@edx/frontend-platform/auth';
+import { IntlProvider, injectIntl } from 'frontend-platform-vi/i18n';
+import * as auth from 'frontend-platform-vi/auth';
 
 import CoachingConsent from '../CoachingConsent';
 import * as selectors from '../../data/selectors';
 
-jest.mock('@edx/frontend-platform/auth');
+jest.mock('frontend-platform-vi/auth');
 
 const IntlCoachingConsent = injectIntl(CoachingConsent);
 

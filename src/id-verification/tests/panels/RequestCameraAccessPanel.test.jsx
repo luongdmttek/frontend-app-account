@@ -5,12 +5,12 @@ import { createMemoryHistory } from 'history';
 import {
   render, screen, cleanup, act, fireEvent,
 } from '@testing-library/react';
-import { getConfig } from '@edx/frontend-platform';
-import { injectIntl, IntlProvider } from '@edx/frontend-platform/i18n';
+import { getConfig } from 'frontend-platform-vi';
+import { injectIntl, IntlProvider } from 'frontend-platform-vi/i18n';
 import IdVerificationContext from '../../IdVerificationContext';
 import RequestCameraAccessPanel from '../../panels/RequestCameraAccessPanel';
 
-jest.mock('@edx/frontend-platform/analytics', () => ({
+jest.mock('frontend-platform-vi/analytics', () => ({
   sendTrackEvent: jest.fn(),
 }));
 

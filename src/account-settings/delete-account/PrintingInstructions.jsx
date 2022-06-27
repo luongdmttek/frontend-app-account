@@ -1,8 +1,8 @@
 import React from 'react';
-import { FormattedMessage, injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { FormattedMessage, injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 import { Hyperlink } from '@edx/paragon';
 
-import { getConfig } from '@edx/frontend-platform';
+import { getConfig } from 'frontend-platform-vi';
 import messages from './messages';
 
 const PrintingInstructions = (props) => {

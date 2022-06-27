@@ -4,12 +4,12 @@ import { createMemoryHistory } from 'history';
 import {
   render, cleanup, act, screen, fireEvent,
 } from '@testing-library/react';
-import '@edx/frontend-platform/analytics';
-import { injectIntl, IntlProvider } from '@edx/frontend-platform/i18n';
+import 'frontend-platform-vi/analytics';
+import { injectIntl, IntlProvider } from 'frontend-platform-vi/i18n';
 import IdVerificationContext from '../../IdVerificationContext';
 import ReviewRequirementsPanel from '../../panels/ReviewRequirementsPanel';
 
-jest.mock('@edx/frontend-platform/analytics', () => ({
+jest.mock('frontend-platform-vi/analytics', () => ({
   sendTrackEvent: jest.fn(),
 }));
 

@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from 'react';
-import { getConfig } from '@edx/frontend-platform';
-import { sendTrackEvent } from '@edx/frontend-platform/analytics';
-import { injectIntl, intlShape } from '@edx/frontend-platform/i18n';
+import { getConfig } from 'frontend-platform-vi';
+import { sendTrackEvent } from 'frontend-platform-vi/analytics';
+import { injectIntl, intlShape } from 'frontend-platform-vi/i18n';
 
 import { useRedirect } from '../../hooks';
 

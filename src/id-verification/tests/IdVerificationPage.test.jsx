@@ -4,7 +4,7 @@ import { Router } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
 import configureStore from 'redux-mock-store';
 import { render, act } from '@testing-library/react';
-import { IntlProvider, injectIntl } from '@edx/frontend-platform/i18n';
+import { IntlProvider, injectIntl } from 'frontend-platform-vi/i18n';
 
 import IdVerificationPage from '../IdVerificationPage';
 import * as selectors from '../data/selectors';

@@ -1,6 +1,6 @@
 import { put, call, takeEvery } from 'redux-saga/effects';
 
-import { getAuthenticatedUser } from '@edx/frontend-platform/auth';
+import { getAuthenticatedUser } from 'frontend-platform-vi/auth';
 
 import { postVerifiedName } from '../../data/service';
 

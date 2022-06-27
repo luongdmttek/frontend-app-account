@@ -1,9 +1,9 @@
-import { getConfig } from '@edx/frontend-platform';
+import { getConfig } from 'frontend-platform-vi';
 import {
   FormattedMessage,
   injectIntl,
   intlShape,
-} from '@edx/frontend-platform/i18n';
+} from 'frontend-platform-vi/i18n';
 
 import { Hyperlink, Input } from '@edx/paragon';
 import PropTypes from 'prop-types';

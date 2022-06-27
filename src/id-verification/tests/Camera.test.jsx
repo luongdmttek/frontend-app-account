@@ -4,16 +4,16 @@ import { createMemoryHistory } from 'history';
 import {
   render, cleanup, screen, act, fireEvent,
 } from '@testing-library/react';
-import { injectIntl, IntlProvider } from '@edx/frontend-platform/i18n';
+import { injectIntl, IntlProvider } from 'frontend-platform-vi/i18n';
 // eslint-disable-next-line import/no-unresolved
 import * as blazeface from '@tensorflow-models/blazeface';
-import * as analytics from '@edx/frontend-platform/analytics';
+import * as analytics from 'frontend-platform-vi/analytics';
 import IdVerificationContext from '../IdVerificationContext';
 import Camera from '../Camera';
 
 jest.mock('jslib-html5-camera-photo');
 jest.mock('@tensorflow-models/blazeface');
-jest.mock('@edx/frontend-platform/analytics');
+jest.mock('frontend-platform-vi/analytics');
 
 analytics.sendTrackEvent = jest.fn();
 

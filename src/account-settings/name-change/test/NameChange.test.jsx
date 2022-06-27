@@ -10,8 +10,8 @@ import {
 } from '@testing-library/react';
 import { createMemoryHistory } from 'history';
 
-import * as auth from '@edx/frontend-platform/auth';
-import { IntlProvider, injectIntl } from '@edx/frontend-platform/i18n';
+import * as auth from 'frontend-platform-vi/auth';
+import { IntlProvider, injectIntl } from 'frontend-platform-vi/i18n';
 
 // Modal creates a portal.  Overriding ReactDOM.createPortal allows portals to be tested in jest.
 ReactDOM.createPortal = node => node;
@@ -24,7 +24,7 @@ jest.mock('react-redux', () => ({
   useDispatch: () => mockDispatch,
 }));
 
-jest.mock('@edx/frontend-platform/auth');
+jest.mock('frontend-platform-vi/auth');
 jest.mock('../../data/selectors', () => jest.fn().mockImplementation(() => ({ nameChangeSelector: () => ({}) })));
 
 const history = createMemoryHistory();
