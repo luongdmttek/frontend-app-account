@@ -763,12 +763,12 @@ class AccountSettingsPage extends React.Component {
           <ThirdPartyAuth />
         </div>
 
-        <div className="account-section" id="delete-account" ref={this.navLinkRefs['#delete-account']}>
+        {/* <div className="account-section" id="delete-account" ref={this.navLinkRefs['#delete-account']}>
           <DeleteAccount
             isVerifiedAccount={this.props.isActive}
             hasLinkedTPA={hasLinkedTPA}
           />
-        </div>
+        </div> */}
 
       </>
     );
