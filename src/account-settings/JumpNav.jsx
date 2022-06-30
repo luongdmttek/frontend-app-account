@@ -18,7 +18,7 @@ function JumpNav({ intl, displayDemographicsLink }) {
           'social-media',
           'site-preferences',
           'linked-accounts',
-          'delete-account',
+          // 'delete-account',
         ]}
         className="list-unstyled"
         currentClassName="font-weight-bold"
