@@ -47,6 +47,7 @@ import {
 import { fetchSiteLanguages } from './site-language';
 import CoachingToggle from './coaching/CoachingToggle';
 import DemographicsSection from './demographics/DemographicsSection';
+import {Helmet} from "react-helmet";
 
 class AccountSettingsPage extends React.Component {
   constructor(props, context) {
@@ -800,6 +801,11 @@ class AccountSettingsPage extends React.Component {
     return (
       <div className="page__account-settings container-fluid py-5">
         {this.renderDuplicateTpaProviderMessage()}
+        <Helmet>
+          <script type="application/json" async = "true">
+            {`{"user_id": ${this.context.authenticatedUser.userId}}`}
+          </script>
+        </Helmet>
         <h1 className="mb-4">
           {this.props.intl.formatMessage(messages['account.settings.page.heading'])}
         </h1>
