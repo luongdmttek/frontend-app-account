@@ -35,6 +35,11 @@ export const GENDER_OPTIONS = [
   'o',
 ];
 
+export const HIDDEN_EXPIRE_COURSES_OPTIONS = [
+  's',
+  'h',
+];
+
 export const COUNTRY_WITH_STATES = 'US';
 
 export const TRANSIFEX_LANGUAGE_BASE_URL = 'https://www.transifex.com/open-edx/edx-platform/language/';

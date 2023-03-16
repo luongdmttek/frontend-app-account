@@ -437,6 +437,31 @@ const messages = defineMessages({
     defaultMessage: 'Other',
     description: 'The label for catch-all gender option.',
   },
+  'account.settings.field.hidden_expire_courses': {
+    id: 'account.settings.field.hidden_expire_courses',
+    defaultMessage: 'Hidden expire',
+    description: 'Label for account settings hidden field.',
+  },
+  'account.settings.field.hidden_expire_courses.empty': {
+    id: 'account.settings.field.hidden_expire_courses.empty',
+    defaultMessage: 'Add hidden expire',
+    description: 'Placeholder for empty account settings hidden field.',
+  },
+  'account.settings.field.hidden_expire_courses.options.empty': {
+    id: 'account.settings.field.hidden_expire_courses.options.empty',
+    defaultMessage: 'Select a hidden',
+    description: 'Placeholder for the hidden options dropdown.',
+  },
+  'account.settings.field.hidden_expire_courses.options.s': {
+    id: 'account.settings.field.hidden_expire_courses.options.s',
+    defaultMessage: 'Show',
+    description: 'The label for the show expired courses option.',
+  },
+  'account.settings.field.hidden_expire_courses.options.h': {
+    id: 'account.settings.field.hidden_expire_courses.options.h',
+    defaultMessage: 'Hide',
+    description: 'The label for the hide expired courses option.',
+  },
   'account.settings.field.language.proficiencies': {
     id: 'account.settings.field.language.proficiencies',
     defaultMessage: 'Spoken language',

@@ -42,6 +42,7 @@ import {
   YEAR_OF_BIRTH_OPTIONS,
   EDUCATION_LEVELS,
   GENDER_OPTIONS,
+  HIDDEN_EXPIRE_COURSES_OPTIONS,
   COUNTRY_WITH_STATES,
   COPPA_COMPLIANCE_YEAR,
   getStatesList,
@@ -145,6 +146,10 @@ class AccountSettingsPage extends React.Component {
     genderOptions: GENDER_OPTIONS.map(key => ({
       value: key,
       label: this.props.intl.formatMessage(messages[`account.settings.field.gender.options.${key || 'empty'}`]),
+    })),
+    hiddenExpireCoursesOptions: HIDDEN_EXPIRE_COURSES_OPTIONS.map(key => ({
+      value: key,
+      label: this.props.intl.formatMessage(messages[`account.settings.field.hidden_expire_courses.options.${key || 'empty'}`]),
     })),
   }));
 
@@ -467,6 +472,7 @@ class AccountSettingsPage extends React.Component {
       yearOfBirthOptions,
       educationLevelOptions,
       genderOptions,
+      hiddenExpireCoursesOptions
     } = this.getLocalizedOptions(this.context.locale, this.props.formValues.country);
 
     // Show State field only if the country is US (could include Canada later)
@@ -676,6 +682,15 @@ class AccountSettingsPage extends React.Component {
             {...editableFieldProps}
           />
           <EditableField
+            name="hidden_expire_courses"
+            type="select"
+            value={this.props.formValues.hidden_expire_courses}
+            options={hiddenExpireCoursesOptions}
+            label={this.props.intl.formatMessage(messages['account.settings.field.hidden_expire_courses'])}
+            emptyLabel={this.props.intl.formatMessage(messages['account.settings.field.hidden_expire_courses.empty'])}
+            {...editableFieldProps}
+          /> 
+          <EditableField
             name="language_proficiencies"
             type="select"
             value={this.props.formValues.language_proficiencies}
@@ -852,6 +867,7 @@ AccountSettingsPage.propTypes = {
     country: PropTypes.string,
     level_of_education: PropTypes.string,
     gender: PropTypes.string,
+    hidden_expire_courses: PropTypes.string,
     language_proficiencies: PropTypes.string,
     pending_name_change: PropTypes.string,
     phone_number: PropTypes.string,
