@@ -439,18 +439,8 @@ const messages = defineMessages({
   },
   'account.settings.field.hidden_expire_courses': {
     id: 'account.settings.field.hidden_expire_courses',
-    defaultMessage: 'Hidden expire',
+    defaultMessage: 'Hidden courses expired',
     description: 'Label for account settings hidden field.',
-  },
-  'account.settings.field.hidden_expire_courses.empty': {
-    id: 'account.settings.field.hidden_expire_courses.empty',
-    defaultMessage: 'Add hidden expire',
-    description: 'Placeholder for empty account settings hidden field.',
-  },
-  'account.settings.field.hidden_expire_courses.options.empty': {
-    id: 'account.settings.field.hidden_expire_courses.options.empty',
-    defaultMessage: 'Select a hidden',
-    description: 'Placeholder for the hidden options dropdown.',
   },
   'account.settings.field.hidden_expire_courses.options.s': {
     id: 'account.settings.field.hidden_expire_courses.options.s',

@@ -149,7 +149,7 @@ class AccountSettingsPage extends React.Component {
     })),
     hiddenExpireCoursesOptions: HIDDEN_EXPIRE_COURSES_OPTIONS.map(key => ({
       value: key,
-      label: this.props.intl.formatMessage(messages[`account.settings.field.hidden_expire_courses.options.${key || 'empty'}`]),
+      label: this.props.intl.formatMessage(messages[`account.settings.field.hidden_expire_courses.options.${key}`]),
     })),
   }));
 
